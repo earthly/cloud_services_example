@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/adamgordonbell/cloudservices/activitylog/internal/server"
+	"github.com/earthly/cloud-services-example/activitylog/internal/server"
 )
 
 func main() {

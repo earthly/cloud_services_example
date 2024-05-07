@@ -1,4 +1,4 @@
-module github.com/adamgordonbell/cloudservices
+module github.com/earthly/cloud-services-example
 
 go 1.15
 
