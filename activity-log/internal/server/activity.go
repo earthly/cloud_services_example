@@ -4,7 +4,7 @@ import (
 	"errors"
 	"sync"
 
-	api "github.com/adamgordonbell/cloudservices/activity-log"
+	api "github.com/earthly/cloud-services-example/activity-log"
 	log "github.com/sirupsen/logrus"
 )
 

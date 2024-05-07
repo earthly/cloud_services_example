@@ -2,8 +2,8 @@ VERSION 0.6
 FROM golang:1.17-alpine3.13
 
 test-all:
-    BUILD ./WebServer+test
-    BUILD ./ActivityLog+test
+    BUILD ./web-server+test
+    BUILD ./activity-log+test
     BUILD +ac-test
 
 ### Activity Client
@@ -31,7 +31,7 @@ ac-test:
     FROM +ac-test-deps
     COPY +ac-build/activityclient ./activityclient
     COPY activity-client/test.sh .
-    WITH DOCKER --load agbell/cloudservices/activityserver=github.com/adamgordonbell/cloudservices/activity-log+docker
+    WITH DOCKER --load agbell/cloudservices/activityserver=./activity-log+docker
         RUN  docker run -d -p 8080:8080 agbell/cloudservices/activityserver && \
                 ./test.sh
     END

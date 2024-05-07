@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/adamgordonbell/cloudservices/activity-client/internal/client"
-	api "github.com/adamgordonbell/cloudservices/activity-log"
+	"github.com/earthly/cloud-services-example/activity-client/internal/client"
+	api "github.com/earthly/cloud-services-example/activity-log"
 )
 
 const defaultURL = "http://localhost:8080/"

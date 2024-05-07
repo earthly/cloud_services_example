@@ -1,5 +1,5 @@
-github.com/adamgordonbell/cloudservices/activity-log v0.0.0-20220103205721-59b1630cbc78 h1:4flqOhDCMA7ve4bIMQnIVGfjPhBzmvSM2/MXuUKdF/Y=
-github.com/adamgordonbell/cloudservices/activity-log v0.0.0-20220103205721-59b1630cbc78/go.mod h1:RrPjI6SkaElNH7kKFWkLfOQMd4JJ/7nNAn1nilXVQLI=
+github.com/earthly/cloud-services-example/activity-log v0.0.0-20220103205721-59b1630cbc78 h1:4flqOhDCMA7ve4bIMQnIVGfjPhBzmvSM2/MXuUKdF/Y=
+github.com/earthly/cloud-services-example/activity-log v0.0.0-20220103205721-59b1630cbc78/go.mod h1:RrPjI6SkaElNH7kKFWkLfOQMd4JJ/7nNAn1nilXVQLI=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/gorilla/mux v1.7.3/go.mod h1:1lud6UwP+6orDFRuTfBEV8e9/aOM/c4fVVCaMa2zaAs=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=

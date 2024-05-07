@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	api "github.com/adamgordonbell/cloudservices/activity-log"
+	api "github.com/earthly/cloud-services-example/activity-log"
 	"github.com/gorilla/mux"
 )
 

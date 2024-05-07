@@ -7,7 +7,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	api "github.com/adamgordonbell/cloudservices/activity-log"
+	api "github.com/earthly/cloud-services-example/activity-log"
 )
 
 type Activities struct {
