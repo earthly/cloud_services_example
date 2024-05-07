@@ -2,6 +2,7 @@ package server
 
 import (
 	"encoding/json"
+	"log"
 	"net/http"
 
 	"github.com/gorilla/mux"
@@ -23,6 +24,7 @@ func (s *httpServer) handleInsert(w http.ResponseWriter, r *http.Request) {
 	var req ActivityDocument
 	err := json.NewDecoder(r.Body).Decode(&req)
 	if err != nil {
+		log.Printf("Error: decoding json: %v", err)
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
 	}
@@ -30,6 +32,7 @@ func (s *httpServer) handleInsert(w http.ResponseWriter, r *http.Request) {
 	res := IDDocument{ID: id}
 	err = json.NewEncoder(w).Encode(res)
 	if err != nil {
+		log.Printf("Error: encoding response: %v", err)
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
