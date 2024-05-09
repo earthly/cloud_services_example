@@ -4,7 +4,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/adamgordonbell/cloudservices/activity-log/internal/server"
+	"github.com/earthly/cloud-services-example/activity-log/internal/server"
 	"google.golang.org/grpc/reflection"
 )
 
