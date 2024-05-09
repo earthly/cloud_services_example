@@ -1,4 +1,4 @@
-module github.com/adamgordonbell/cloudservices/activity-log
+module github.com/earthly/cloud-services-example/activity-log
 
 go 1.17
 
