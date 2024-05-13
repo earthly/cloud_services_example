@@ -1,6 +1,12 @@
 #!/usr/bin/env sh
 set -e
 
+echo "start up"
+while ! nc -z localhost 8080; do   
+  sleep 1 # wait for 1 second before check again
+  echo "Waiting for service to start..."
+done
+
 echo "=== Add Records ==="
 ./activity-client -add "overhead press: 70lbs"
 ./activity-client -add "20 minute walk"

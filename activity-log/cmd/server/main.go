@@ -6,12 +6,12 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/adamgordonbell/cloudservices/activity-log/internal/server"
+	"github.com/earthly/cloud-services-example/activity-log/internal/server"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 
-	api "github.com/adamgordonbell/cloudservices/activity-log/api/v1"
+	api "github.com/earthly/cloud-services-example/activity-log/api/v1"
 )
 
 func grpcHandlerFunc(grpcServer grpc.Server, otherHandler http.Handler) http.Handler {

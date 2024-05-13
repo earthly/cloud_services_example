@@ -1,4 +1,4 @@
-VERSION 0.6
+VERSION 0.8
 FROM golang:1.17-alpine3.13
 
 test-all:
@@ -17,4 +17,3 @@ up:
 down:
     LOCALLY
     RUN docker compose down
-

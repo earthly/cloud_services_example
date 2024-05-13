@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	api "github.com/adamgordonbell/cloudservices/activity-log/api/v1"
+	api "github.com/earthly/cloud-services-example/activity-log/api/v1"
 
 	"google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
@@ -31,6 +31,7 @@ func (s *GrpcServer) Retrieve(ctx context.Context, req *api.RetrieveRequest) (*a
 }
 
 func (s *GrpcServer) Insert(ctx context.Context, activity *api.Activity) (*api.InsertResponse, error) {
+	log.Printf("Inserting: %s, %s, %d\n", activity.Description, activity.Time.AsTime(), activity.Id)
 	id, err := s.Activities.Insert(activity)
 	if err != nil {
 		log.Printf("Error:%s", err.Error())

@@ -1,4 +1,4 @@
-VERSION 0.6
+VERSION 0.8
 FROM golang:1.15-alpine3.13
 WORKDIR /activity-log
 
@@ -7,7 +7,6 @@ RUN apk add build-base
 deps:
     COPY go.mod go.sum ./
     RUN go mod download
-    RUN go get github.com/mattn/go-sqlite3
     SAVE ARTIFACT go.mod AS LOCAL go.mod
     SAVE ARTIFACT go.sum AS LOCAL go.sum
 
