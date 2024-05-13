@@ -7,7 +7,6 @@ RUN apk add build-base
 deps:
     COPY go.mod go.sum ./
     RUN go mod download
-    RUN go get github.com/mattn/go-sqlite3
     SAVE ARTIFACT go.mod AS LOCAL go.mod
     SAVE ARTIFACT go.sum AS LOCAL go.sum
 
@@ -31,7 +30,7 @@ proto:
     COPY api ./api
     COPY buf.* .
     RUN buf lint
-    RUN buf breaking --against "https://github.com/adamgordonbell/cloudservices.git#branch=buf,subdir=activity-log" 
+    RUN buf breaking --against "https://github.com/earthly/cloud-services-example.git#branch=buf,subdir=activity-log" 
     RUN buf generate 
     SAVE ARTIFACT ./api AS LOCAL ./api 
 
