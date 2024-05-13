@@ -9,10 +9,10 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/adamgordonbell/cloudservices/lambda-api/textmode"
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
 	"github.com/awslabs/aws-lambda-go-api-proxy/gorillamux"
+	"github.com/earthly/cloud-services-example/lambda-api/textmode"
 	"github.com/gorilla/mux"
 	_ "github.com/motemen/go-loghttp/global"
 )

@@ -1,4 +1,4 @@
-module github.com/adamgordonbell/cloudservices/lambda
+module github.com/earthly/cloud-services-example/lambda
 
 go 1.17
 

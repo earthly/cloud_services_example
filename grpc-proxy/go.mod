@@ -1,9 +1,9 @@
-module github.com/adamgordonbell/cloudservices/grpc-proxy
+module github.com/earthly/cloud-services-example/grpc-proxy
 
 go 1.17
 
 require (
-	github.com/adamgordonbell/cloudservices/activity-log v0.0.0-20220211141003-6b935656e57b
+	github.com/earthly/cloud-services-example/activity-log v0.0.0-20220211141003-6b935656e57b
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.7.3
 	google.golang.org/grpc v1.44.0
 )
@@ -18,4 +18,4 @@ require (
 )
 
 
-replace github.com/adamgordonbell/cloudservices/activity-log => ../activity-log
+replace github.com/earthly/cloud-services-example/activity-log => ../activity-log
