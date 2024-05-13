@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	api "github.com/adamgordonbell/cloudservices/activity-log/api/v1"
+	api "github.com/earthly/cloud-services-example/activity-log/api/v1"
 
 	"google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
