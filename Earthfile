@@ -17,4 +17,3 @@ up:
 down:
     LOCALLY
     RUN docker compose down
-
